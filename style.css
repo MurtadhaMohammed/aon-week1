@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  background-color: #dddddd;
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+header .content .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .content a {
+  margin-left: 16px;
+  font-size: 16px;
+}
+
+.cover {
+  height: 450px;
+  background-color: #dddddd;
+}
+
+.cover .info {
+  padding-top: 140px;
+}
+
+.cover .info h1 {
+  font-size: 58px;
+}
+.cover .info h2 {
+  font-size: 38px;
+  color: #a5a5a5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 28px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.grid .card .img {
+  height: 300px;
+  width: 100%;
+  border-radius: 16px;
+  background-color: #eee;
+}
+
+.grid .card p {
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cover .info h1 {
+    font-size: 38px;
+  }
+  .cover .info h2 {
+    font-size: 28px;
+  }
+
+  .grid {
+    margin-top: -180px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .cover .info h1 {
+    font-size: 28px;
+  }
+  .cover .info h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Positions */
+
+/* .box{
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+
+.box .inner-box{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+} */
+
+body{
+  background-color: #f6f6f6;
+}
+
+.users-list {
+  padding: 100px;
+}
+
+.user-card {
+  background-color: #fff;
+  width: 300px;
+  height: 80px;
+  border-radius: 16px;
+  border: 1px solid #eee;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.user-card .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.user-card .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-card .email {
+  font-size: 16px;
+  color: #a5a5a5;
+}
+
+.user-card .crown-img {
+  width: 20px;
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  transform: rotate(330deg);
+}
